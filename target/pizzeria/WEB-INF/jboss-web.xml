@@ -1,0 +1,7 @@
+<jboss-web>
+    <context-root>/pizzeria</context-root>
+    <!-- <resource-ref>
+        <res-ref-name>jdbc/agenda</res-ref-name>
+        <jndi-name>java:jboss/datasources/agenda</jndi-name>
+    </resource-ref> -->
+</jboss-web>

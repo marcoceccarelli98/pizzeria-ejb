@@ -1,0 +1,26 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+    version="2.0">
+
+    <persistence-unit name="PizzeriaPU" transaction-type="JTA">
+
+        <non-jta-data-source>PizzeriaDS</non-jta-data-source>
+
+        <class>com.pizzeria.Pizza</class>
+        <class>com.pizzeria.Pizza$Impasto</class>
+        <class>com.pizzeria.Pizza$Utente</class>
+        <class>com.pizzeria.Pizza$Ingrediente</class>
+
+        <properties>
+            <!-- <property name="hibernate.default_schema" value="pizzeria" /> -->
+            <!-- Echo all executed SQL to console -->
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.highlight_sql" value="true" />
+            <property name="hibernate.use_sql_comments" value="true" />
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
